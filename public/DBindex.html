@@ -12,6 +12,25 @@
       background-color: rgb(200,200,250);
       border: 2px solid rgb(50,50,100);
     }
+
+    section{
+      background-color: white;
+    }
+    section h2{
+      color: #999;
+      font-size: 12pt;
+      text-transform: uppercase;
+      text-align:left;
+
+    }
+
+    #target-date{
+      border: 3px solid rgb(94,3,5);
+    }
+
+    .data-big, .label{
+      font-size: 20pt;
+    }
     </style>
 
     <title>Project Dashboard</title>
@@ -25,12 +44,21 @@
           completion %
         </div>
 
-        <div class="col placeholder">
-          status
+        <section id="target-date" class="col placeholder">
+          <h2>Target Date</h2>
+          <div>
+
+          <span class = "Label">Days:</span>
+          <span class= "data-big time-med">17</span>
         </div>
+        <div>
+          <span class="data-big">d/m/yy</span>
+        </div>
+        </section>
+
 
         <div class="col placeholder">
-          this is nicks first page
+          Status
         </div>
 
 </div> <!-- end of row 1, high level -->
