@@ -1,10 +1,10 @@
 <?php
 
 require '../../app/common.php';
-
-
-//fetch from fb
-$team = Team::findAll();
-
-//convert to json and print
-echo json_encode($teams);
+// 1. Go to the database and get all teams
+$teams = Team::fetchAll();
+// 2. Convert to JSON
+$json = json_encode($teams, JSON_PRETTY_PRINT);
+// 3. Print
+header('Content-Type: application/json');
+echo $json
